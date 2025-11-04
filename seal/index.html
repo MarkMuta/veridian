@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERIDIAN - Agri-Innovations & Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles to mimic the dark green color and background */
+        .text-veridian-green { color: #1e3f20; }
+        .bg-veridian-green { background-color: #0b1f0d; }
+        .bg-light-blue { background-color: #f0f8ff; }
+
+        /* Style for the hero background image (replace 'hero-bg.jpg' with your image) */
+        .hero-bg {
+            background-image: url("images/greene.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800">
+
+    <header class="hero-bg flex flex-col items-center justify-center text-white text-center p-8">
+        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-widest pt-10">VERIDIAN</h1>
+        <h2 class="text-xl sm:text-2xl font-semibold mb-2">AGRI-INNOVATIONS & SOLUTIONS</h2>
+        <p class="text-lg mb-6 font-medium text-white">Feeding the Future Sustainably</p>
+        <button class="bg-veridian-green hover:bg-green-700 text-white font-bold py-2 px-6 rounded-md transition duration-300">
+            Get Started
+        </button>
+    </header>
+
+    <section class="container mx-auto px-4 py-16" id="about-us">
+        <div class="flex flex-col md:flex-row items-center gap-8">
+            <div class="md:w-1/2">
+                <img src="images/idroponic-greenhouses-evidenza.jpg" alt="Greenhouse interior" class="rounded-lg shadow-xl w-full">
+            </div>
+            
+            <div class="md:w-1/2">
+                <h2 class="text-3xl font-bold mb-4">About Us</h2>
+                <p class="text-gray-600 leading-relaxed">
+                    At Veridian, we are pioneers in sustainable agriculture, dedicated to revolutionizing farming practices through cutting-edge innovation. Our mission is to cultivate a greener future by integrating hydroponics, organic farming, and advanced agri-tech solutions. We empower farmers with the tools and knowledge to achieve unprecedented yields while significantly reducing environmental impact. Join us in nurturing a world where food security and ecological balance thrive hand in hand.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <hr class="border-gray-200">
+
+    <section class="bg-light-blue py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-10">Our Services</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+                
+                <div id="hydroponic-card" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 cursor-pointer">
+                    <svg class="h-10 w-10 mx-auto mb-3 text-veridian-green" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v20M2 12h20M7 12a5 5 0 0110 0M12 7v10"/>
+                    </svg>
+                    <p class="font-semibold">Hydroponic Systems</p>
+                    <p class="text-sm text-gray-500 mt-2">Advanced soilless cultivation for maximum yield and resource efficiency.</p>
+                </div>
+                
+                <div id="organic-card" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 cursor-pointer">
+                    <svg class="h-10 w-10 mx-auto mb-3 text-veridian-green" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                    </svg>
+                    <p class="font-semibold">Organic Farming</p>
+                    <p class="text-sm text-gray-500 mt-2">Sustainable practices to grow healthy crops without synthetic pesticides or fertilizers.</p>
+                </div>
+                
+                <div id="smart-agri-card" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 cursor-pointer">
+                    <svg class="h-10 w-10 mx-auto mb-3 text-veridian-green" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.9M5 10a2 2 0 114 0 2 2 0 01-4 0z"/>
+                    </svg>
+                    <p class="font-semibold">Smart Agriculture</p>
+                    <p class="text-sm text-gray-500 mt-2">Leveraging IoT and AI for precision farming, optimizing every aspect of crop growth.</p>
+                </div>
+
+                <div id="agri-tech-card" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 cursor-pointer">
+                    <svg class="h-10 w-10 mx-auto mb-3 text-veridian-green" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"/>
+                    </svg>
+                    <p class="font-semibold">Agri-Tech Solutions</p>
+                    <p class="text-sm text-gray-500 mt-2">Innovative technological tools to boost productivity and sustainability in farming.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto px-4 py-16" id="products">
+        <div class="flex flex-col md:flex-row items-center gap-8">
+            <div class="md:w-1/2 order-1 md:order-1">
+                <img src="images/rice.avif" alt="Field of fresh produce" class="rounded-lg shadow-xl w-full">
+            </div>
+
+            <div class="md:w-1/2 order-2 md:order-2">
+                <h2 class="text-3xl font-bold mb-4">Products</h2>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    Discover Veridian's extensive catalog of high-quality products designed to elevate your sustainable farming endeavors. From advanced environmental sensors and intelligent irrigation systems to premium organic nutrients and resilient seed varieties, we provide everything you need to optimize crop health, maximize yields, and cultivate a thriving, eco-friendly agricultural operation.
+                </p>
+                <a href="services.html" class="inline-block bg-veridian-green hover:bg-green-700 text-white font-bold py-2 px-6 rounded-md transition duration-300">View Products</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-blue py-16" id="blog">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2 order-2 md:order-1">
+                    <h2 class="text-3xl font-bold mb-4">Blog</h2>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Stay informed with Veridian's latest insights and updates on sustainable agriculture and cutting-edge technology. Our blog features in-depth articles on maximizing efficiency, exploring new farming techniques, and highlighting our unwavering commitment to a greener, more productive future. Dive into expert analyses, success stories, and practical tips to cultivate your knowledge and grow with us.
+                    </p>
+                    <button id="blogReadMoreBtn" class="text-veridian-green font-bold py-2 px-0 hover:underline transition duration-300">
+                        Read More
+                    </button>
+                </div>
+
+                <div class="md:w-1/2 order-1 md:order-2">
+                    <img src="images/tt.jpg" alt="Person using a tablet in a greenhouse" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-veridian-green text-white text-center p-4">
+        <div class="container mx-auto">
+            <div class="w-full md:w-1/3 mx-auto">
+                <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                <div class="flex items-center justify-center mb-2">
+                    <img src="images/phone.png" alt="Phone" class="w-6 h-6 mr-2">
+                    <p>+254 741 623 903</p>
+                </div>
+                </div>
+                <div class="flex items-center justify-center mb-2">
+                    <img src="images/mail.jpg" alt="Email" class="w-6 h-6 mr-2">
+                    <p>info@veridian.co.ke</p>
+                </div>
+            </div>
+        </div>
+        <div class="mt-8 text-center text-gray-400">
+            <p>&copy; 2025 Veridian. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Service Detail Modal -->
+    <div id="serviceModal" class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full hidden">
+        <div class="relative top-20 mx-auto p-5 border w-11/12 md:w-3/4 lg:w-1/2 shadow-lg rounded-md bg-white">
+            <div class="flex justify-between items-center pb-3">
+                <h3 id="modalTitle" class="text-2xl font-bold text-veridian-green"></h3>
+                <button class="text-gray-400 hover:text-gray-600 text-2xl font-bold" onclick="closeModal()">&times;</button>
+            </div>
+            <div id="modalContent" class="text-gray-700">
+                <!-- Service details and images will be loaded here -->
+            </div>
+            <div class="items-center px-4 py-3">
+                <button id="ok-btn" class="px-4 py-2 bg-veridian-green text-white text-base font-medium rounded-md w-full shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-300" onclick="closeModal()">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Article Modal -->
+    <div id="blogModal" class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full hidden">
+        <div class="relative top-20 mx-auto p-5 border w-11/12 md:w-3/4 lg:w-1/2 shadow-lg rounded-md bg-white">
+            <div class="flex justify-between items-center pb-3">
+                <h3 id="blogModalTitle" class="text-2xl font-bold text-veridian-green"></h3>
+                <button class="text-gray-400 hover:text-gray-600 text-2xl font-bold" onclick="closeBlogModal()">&times;</button>
+            </div>
+            <div id="blogModalContent" class="text-gray-700 max-h-96 overflow-y-auto">
+                <!-- Blog article content will be loaded here -->
+            </div>
+            <div class="items-center px-4 py-3">
+                <button class="px-4 py-2 bg-veridian-green text-white text-base font-medium rounded-md w-full shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-300" onclick="closeBlogModal()">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Smooth scrolling for navigation buttons
+        document.querySelector('button.bg-veridian-green').addEventListener('click', function() {
+            document.getElementById('about-us').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        document.querySelector('section:nth-of-type(3) a').addEventListener('click', function() {
+            document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        document.querySelector('section:nth-of-type(4) button').addEventListener('click', function() {
+            document.getElementById('blog').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // Modal functionality
+        const serviceModal = document.getElementById('serviceModal');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalContent = document.getElementById('modalContent');
+
+        function openModal(title, description, images) {
+            modalTitle.textContent = title;
+            let contentHtml = `<p class="mb-4">${description}</p>`;
+            images.forEach(img => {
+                contentHtml += `<img src="${img}" alt="${title}" class="w-full h-48 object-cover rounded-md mb-4 shadow-md">`;
+            });
+            modalContent.innerHTML = contentHtml;
+            serviceModal.classList.remove('hidden');
+        }
+
+        function closeModal() {
+            serviceModal.classList.add('hidden');
+        }
+
+        // Close modal when clicking outside of it
+        serviceModal.addEventListener('click', function(event) {
+            if (event.target === serviceModal) {
+                closeModal();
+            }
+        });
+
+        // Blog Modal functionality
+        const blogModal = document.getElementById('blogModal');
+        const blogModalTitle = document.getElementById('blogModalTitle');
+        const blogModalContent = document.getElementById('blogModalContent');
+
+        function openBlogModal(title, content) {
+            blogModalTitle.textContent = title;
+            blogModalContent.innerHTML = content;
+            blogModal.classList.remove('hidden');
+        }
+
+        function closeBlogModal() {
+            blogModal.classList.add('hidden');
+        }
+
+        // Close blog modal when clicking outside of it
+        blogModal.addEventListener('click', function(event) {
+            if (event.target === blogModal) {
+                closeBlogModal();
+            }
+        });
+
+        // Event listener for Blog Read More button
+        document.getElementById('blogReadMoreBtn').addEventListener('click', function() {
+            openBlogModal(
+                'Maximizing Efficiency in Sustainable Agriculture',
+                '<p class="mb-4">Sustainable agriculture is not just about being eco-friendly; it\'s also about optimizing every aspect of farming to achieve maximum output with minimal input. This article explores various strategies and technologies that can help farmers enhance efficiency, from precision irrigation to advanced crop rotation techniques. By adopting smart farming practices, farmers can reduce waste, conserve resources, and significantly boost their yields, contributing to a more sustainable and profitable future.</p><p class="mb-4">Key areas of focus include:</p><ul><li class="list-disc ml-5">Precision farming technologies (IoT, AI, drones)</li><li class="list-disc ml-5">Water management and conservation</li><li class="list-disc ml-5">Soil health and nutrient optimization</li><li class="list-disc ml-5">Integrated pest management</li></ul><p class="mb-4">Embracing these innovations can lead to a revolution in how we produce food, ensuring both environmental stewardship and economic viability for farmers worldwide.</p>'
+            );
+        });
+
+        // Event listeners for service cards
+        document.getElementById('hydroponic-card').addEventListener('click', function() {
+            openModal(
+                'Hydroponic Systems',
+                'Veridian\'s hydroponic systems offer a revolutionary approach to agriculture, enabling crop cultivation without soil. Our advanced setups ensure optimal nutrient delivery, precise environmental control, and significantly reduced water usage. Experience faster growth cycles, higher yields, and year-round production, all while minimizing your ecological footprint. Ideal for urban farming and regions with limited arable land.',
+                ['/images/green.avif', '/images/greene.jpg']
+            );
+        });
+
+        document.getElementById('organic-card').addEventListener('click', function() {
+            openModal(
+                'Organic Farming',
+                'Embrace nature\'s wisdom with Veridian\'s organic farming solutions. We provide comprehensive guidance and resources for cultivating healthy, chemical-free produce. Our methods focus on soil health, biodiversity, and natural pest control, ensuring sustainable practices that protect both consumers and the environment. Grow with confidence, knowing your crops are pure and your land is nurtured.',
+                ['/images/eee.jpg', '/images/rice.avif']
+            );
+        });
+
+        document.getElementById('smart-agri-card').addEventListener('click', function() {
+            openModal(
+                'Smart Agriculture',
+                'Step into the future of farming with Veridian\'s smart agriculture technologies. Utilizing IoT sensors, AI-driven analytics, and automated systems, we bring precision to every aspect of your farm. Monitor soil conditions, weather patterns, and crop health in real-time, optimizing irrigation, fertilization, and harvesting. Maximize efficiency, reduce waste, and boost profitability with intelligent insights.',
+                ['/images/tt.jpg', '/images/idroponic-greenhouses-evidenza.jpg']
+            );
+        });
+
+        document.getElementById('agri-tech-card').addEventListener('click', function() {
+            openModal(
+                'Agri-Tech Solutions',
+                'Veridian\'s agri-tech solutions are designed to empower modern farmers with innovative tools and strategies. From drone-based crop monitoring to advanced greenhouse automation and sustainable energy integration, we offer a suite of technologies that enhance productivity, conserve resources, and drive agricultural sustainability. Transform your farm into a high-tech, eco-friendly operation.',
+                ['/images/idroponic-greenhouses-evidenza.jpg', '/images/green.avif']
+            );
+        });
+    </script>
+</body>
+</html>
